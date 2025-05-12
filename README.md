@@ -26,7 +26,7 @@ Output: [0,1]
 - PP1: Duyệt chay
     - Duyệt từng phần tử trong mảng xem nó có thể cộng với số nào để bằng target
     - Độ phức tạp là O(n^2) 
-    - > Ưu điểm: Là cách nghĩ ra đầu tiên
+    - > Ưu điểm: Là cách nghĩ ra đầu tiên  
       > Nhược điểm: Lâu, chậm 
 - PP2: Dùng 2 con trỏ chạy từ 2 đầu của mảng
     - Phải sắp xếp trước khi duyệt
@@ -41,6 +41,7 @@ Output: [0,1]
     - Độ phức tạp là O(n) 
     - > Đây là cách tối ưu nhất 
 ### 🧑‍💻 Code C++
+```
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -58,8 +59,9 @@ public:
     return {};
     }
 };
-
+```
 ### 🧑‍💻 Code Python
+```
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         seen = {}
@@ -69,3 +71,4 @@ class Solution:
                 return [seen[tru], i]
             else:
                 seen[nums[i]] = i
+```
